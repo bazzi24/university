@@ -43,9 +43,10 @@ double Diem::dienTich(Diem a, Diem b){
 
 int main(){
 	Diem p1, p2, p3;
-	cin >> p1 >> p2 >> p3;
+	cout << "Nhap toa do thu nhat " << endl;; cin >> p1;
+    cout << "Nhap toa do thu hai " << endl; cin >> p2;
+    cout << "Nhap toa do thu ba " << endl; cin >> p3;
     cout << "Chu vi cua ba diem tren la: " << p1.chuVi(p2,p3) << endl;
     cout << "Dien tich cua ba diem tren la: " << p1.dienTich(p2,p3) << endl;
-	
 	return 0;
 }
