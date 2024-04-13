@@ -12,6 +12,7 @@ class Diem{
         double khoangCach(Diem u);
         double dienTich(Diem u, Diem v);
         double chuVi(Diem u, Diem v);
+        //~Diem();
 };
 
 Diem::Diem(double x, double y){
@@ -22,10 +23,12 @@ Diem::Diem(double x, double y){
 istream& operator >> (istream &is, Diem &u){
     cout << "Nhap toa do x: "; is >> u.x;
     cout << "Nhap toa do y: "; is >> u.y;
+    return is;
 }
 
-ostream&  operator<< (ostream &is, Diem &u){
-    cout << "(" << u.x << "," << u.y << ")" << endl;
+ostream&  operator<< (ostream &os, Diem &u){
+    os << "(" << u.x << "," << u.y << ")" << endl;
+    return os;
 } 
 
 double Diem::khoangCach(Diem u){
