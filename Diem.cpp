@@ -51,5 +51,6 @@ int main(){
     cout << "Nhap toa do thu ba " << endl; cin >> p3;
     cout << "Chu vi cua ba diem tren la: " << p1.chuVi(p2,p3) << endl;
     cout << "Dien tich cua ba diem tren la: " << p1.dienTich(p2,p3) << endl;
+    cout << "Chu vi + dien tich = " << p1.chuVi(p2,p3) + p1.dienTich(p2,p3) << endl;
 	return 0;
 }
