@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 #define PI 3.14159 
 using namespace std;
 
@@ -15,7 +14,7 @@ class Diem2D{
         void input();
         void output();
         double distance(Diem2D& u);
-        //~Diem2D();
+        ~Diem2D(){}
 };
 
 Diem2D::Diem2D(double x, double y){
@@ -61,7 +60,7 @@ class HinhTron{
         void output();
         double circumference(HinhTron& u);
         double area(HinhTron& u);
-        //~HinhTron();
+        ~HinhTron(){}
 };
 
 void HinhTron::input(){
@@ -91,7 +90,7 @@ public:
     void output(); 
     double circumfence();
     double area();
-    //~ TamGiac();
+    ~ TamGiac(){}
 };
 
 void TamGiac::input(){
